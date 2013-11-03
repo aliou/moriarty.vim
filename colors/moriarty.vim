@@ -5,9 +5,16 @@
 "    |_|  |_|\___/|_|  |_|\__,_|_|   \__|\__, |
 "                                        |___/
 "
+"   I've given you a glimpse, Sherlock. Just a tinsy glimspe of what I've got
+"   going on out there in the big bad world. I'm a specialist you see, like you.
+"
 "   Made of Code + Bad Wolf
 
 " Preamble {{{
+
+if !has("gui_running") && &t_Co != 88 && &t_Co != 256
+    finish
+endif
 
 set background=dark
 highlight clear
@@ -26,9 +33,20 @@ let s:mc = {}
 " Our basic color.
 let s:mc.plain = 'f8f8f8'
 
-" MJ at two different point of his life.
+" MJ at two different points in his life.
 let s:mc.black = 'ffffff'
 let s:mc.white = '000000'
+
+" The gravel colors from Bad Wolf.
+let s:mc.brightgravel   = ['d9cec3', 252]
+let s:mc.lightgravel    = ['998f84', 245]
+let s:mc.gravel         = ['857f78', 243]
+let s:mc.mediumgravel   = ['666462', 241]
+let s:mc.deepgravel     = ['45413b', 238]
+let s:mc.deepergravel   = ['35322d', 236]
+let s:mc.darkgravel     = ['242321', 235]
+let s:mc.blackgravel    = ['1c1b1a', 233]
+let s:mc.blackestgravel = ['141413', 232]
 
 " }}}
 
