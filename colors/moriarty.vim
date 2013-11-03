@@ -24,11 +24,11 @@ let g:colors_name = "moriarty"
 let s:mc = {}
 
 " Our basic color.
-let s:mc.plain = []
+let s:mc.plain = 'f8f8f8'
 
 " MJ at two different point of his life.
-let s:mc.black = []
-let s:mc.white = []
+let s:mc.black = 'ffffff'
+let s:mc.white = '000000'
 
 " }}}
 

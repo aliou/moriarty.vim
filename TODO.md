@@ -3,3 +3,4 @@
   * 80-char limit
   * Tab gutter thingy
   * Diff colors.
+  * Current line hl
