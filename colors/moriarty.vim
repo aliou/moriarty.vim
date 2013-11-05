@@ -90,12 +90,35 @@ function! s:HL(group, fg, ...)
 endfunction
 " }}}
 
+" Actual colorscheme ----------------------------------------------------------
+" Vanilla Vim {{{
+
+" General/UI {{{
+
+call s:HL('Normal', 'plain', 'blackgravel')
+
+call s:HL('Folded', 'mediumgravel', 'bg', 'none')
+
+call s:HL('VertSplit', 'lightgravel', 'bg', 'none')
+
+call s:HL('CursorLine',   '', 'darkgravel', 'none')
+call s:HL('CursorColumn', '', 'darkgravel')
+call s:HL('ColorColumn',  '', 'darkgravel')
+
+call s:HL('TabLine', 'plain', 'blackestgravel', 'none')
+call s:HL('TabLineFill', 'plain', 'blackestgravel', 'none')
+call s:HL('TabLineSel', 'coal', 'tardis', 'none')
+
+" }}}
+
+" }}}
+
 hi Cursor  guifg=NONE guibg=#00ffff gui=NONE
 hi Visual  guifg=NONE guibg=#05448d gui=NONE
-hi CursorLine  guifg=NONE guibg=#090a1b gui=NONE
-hi CursorColumn  guifg=NONE guibg=#090a1b gui=NONE
+" hi CursorLine  guifg=NONE guibg=#090a1b gui=NONE
+" hi CursorColumn  guifg=NONE guibg=#090a1b gui=NONE
 hi LineNr  guifg=#81818a guibg=#090a1b gui=NONE
-hi VertSplit  guifg=#363745 guibg=#363745 gui=NONE
+" hi VertSplit  guifg=#363745 guibg=#363745 gui=NONE
 hi MatchParen  guifg=#ff3854 guibg=NONE gui=NONE
 hi StatusLine  guifg=#f8f8f8 guibg=#363745 gui=bold
 hi StatusLineNC  guifg=#f8f8f8 guibg=#363745 gui=NONE
@@ -104,9 +127,9 @@ hi PmenuSel  guifg=NONE guibg=#05448d gui=NONE
 hi IncSearch  guifg=NONE guibg=#233466 gui=NONE
 hi Search  guifg=NONE guibg=#233466 gui=NONE
 hi Directory  guifg=#0a9cff guibg=NONE gui=NONE
-hi Folded  guifg=#c050c2 guibg=#090a1b gui=NONE
+" hi Folded  guifg=#c050c2 guibg=#090a1b gui=NONE
 
-hi Normal  guifg=#f8f8f8 guibg=#090a1b gui=NONE
+" hi Normal  guifg=#f8f8f8 guibg=#090a1b gui=NONE
 hi Boolean  guifg=#0a9cff guibg=NONE gui=NONE
 hi Character  guifg=#0a9cff guibg=NONE gui=NONE
 hi Comment  guifg=#c050c2 guibg=#000000 gui=italic
