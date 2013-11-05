@@ -47,6 +47,9 @@ let s:mc.darkgravel     = ['242321', 235]
 let s:mc.blackgravel    = ['1c1b1a', 233]
 let s:mc.blackestgravel = ['141413', 232]
 
+let s:mc.bluebox = ['233466', 39]
+let s:mc.tardis = ['0a9dff', 39]
+
 " }}}
 " Highlighting Function {{{
 function! s:HL(group, fg, ...)
