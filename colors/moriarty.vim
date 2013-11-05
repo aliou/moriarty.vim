@@ -49,7 +49,7 @@ let s:mc.blackestgravel = ['141413', 232]
 
 " The blues from Made of Code and Badwolf.
 let s:mc.bluebox = ['233466', 39]
-let s:mc.tardis = ['0a9dff', 39]
+let s:mc.tardis  = ['0a9dff', 39]
 
 " Made of Code's not quite red.
 let s:mc.notquitered = ['ff3854', 196]
@@ -111,19 +111,27 @@ call s:HL('ColorColumn',  '', 'darkgravel')
 
 call s:HL('TabLine', 'plain', 'blackestgravel', 'none')
 call s:HL('TabLineFill', 'plain', 'blackestgravel', 'none')
-call s:HL('TabLineSel', 'coal', 'tardis', 'none')
+call s:HL('TabLineSel', 'black', 'tardis', 'none')
+
+call s:HL('MatchParen', 'notquitered', 'darkgravel', 'bold')
+
+call s:HL('NonText',    'deepgravel', 'bg')
+call s:HL('SpecialKey', 'deepgravel', 'bg')
+
+call s:HL('Visual',    '',  'deepgravel')
+call s:HL('VisualNOS', '',  'deepgravel')
 
 " }}}
 
 " }}}
 
 hi Cursor  guifg=NONE guibg=#00ffff gui=NONE
-hi Visual  guifg=NONE guibg=#05448d gui=NONE
+" hi Visual  guifg=NONE guibg=#05448d gui=NONE
 " hi CursorLine  guifg=NONE guibg=#090a1b gui=NONE
 " hi CursorColumn  guifg=NONE guibg=#090a1b gui=NONE
 hi LineNr  guifg=#81818a guibg=#090a1b gui=NONE
 " hi VertSplit  guifg=#363745 guibg=#363745 gui=NONE
-hi MatchParen  guifg=#ff3854 guibg=NONE gui=NONE
+" hi MatchParen  guifg=#ff3854 guibg=NONE gui=NONE
 hi StatusLine  guifg=#f8f8f8 guibg=#363745 gui=bold
 hi StatusLineNC  guifg=#f8f8f8 guibg=#363745 gui=NONE
 hi Pmenu  guifg=#6fd3ff guibg=NONE gui=NONE
@@ -147,12 +155,12 @@ hi Function  guifg=#6fd3ff guibg=NONE gui=NONE
 hi Identifier  guifg=#99cf50 guibg=NONE gui=NONE
 hi Keyword  guifg=#ff3854 guibg=NONE gui=NONE
 hi Label  guifg=#8fff58 guibg=#102522 gui=NONE
-hi NonText  guifg=#353c4f guibg=#090a1b gui=NONE
+" hi NonText  guifg=#353c4f guibg=#090a1b gui=NONE
 hi Number  guifg=#0a9cff guibg=NONE gui=NONE
 hi Operator  guifg=#ff3854 guibg=NONE gui=NONE
 hi PreProc  guifg=#ff3854 guibg=NONE gui=NONE
 hi Special  guifg=#f8f8f8 guibg=NONE gui=NONE
-hi SpecialKey  guifg=#353c4f guibg=#090a1b gui=NONE
+" hi SpecialKey  guifg=#353c4f guibg=#090a1b gui=NONE
 hi Statement  guifg=#ff3854 guibg=NONE gui=NONE
 hi StorageClass  guifg=#99cf50 guibg=NONE gui=NONE
 hi String  guifg=#8fff58 guibg=#102522 gui=NONE
