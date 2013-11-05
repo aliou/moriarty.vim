@@ -47,8 +47,12 @@ let s:mc.darkgravel     = ['242321', 235]
 let s:mc.blackgravel    = ['1c1b1a', 233]
 let s:mc.blackestgravel = ['141413', 232]
 
+" The blues from Made of Code and Badwolf.
 let s:mc.bluebox = ['233466', 39]
 let s:mc.tardis = ['0a9dff', 39]
+
+" Made of Code's not quite red.
+let s:mc.notquitered = ['ff3854', 196]
 
 " }}}
 " Highlighting Function {{{
