@@ -33,8 +33,8 @@ let s:mc = {}
 let s:mc.plain = ['f8f8f8', 15]
 
 " MJ at two different points in his life.
-let s:mc.black = ['ffffff', 15]
-let s:mc.white = ['000000', 16]
+let s:mc.white = ['ffffff', 15]
+let s:mc.black = ['000000', 16]
 
 " The gravel colors from Bad Wolf.
 let s:mc.brightgravel   = ['d9cec3', 252]
