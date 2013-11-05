@@ -113,9 +113,9 @@ call s:HL('CursorLine',   '', 'darkgravel', 'none')
 call s:HL('CursorColumn', '', 'darkgravel')
 call s:HL('ColorColumn',  '', 'darkgravel')
 
-call s:HL('TabLine', 'plain', 'blackestgravel', 'none')
+call s:HL('TabLine',     'plain', 'blackestgravel', 'none')
 call s:HL('TabLineFill', 'plain', 'blackestgravel', 'none')
-call s:HL('TabLineSel', 'black', 'tardis', 'none')
+call s:HL('TabLineSel',  'black', 'tardis', 'none')
 
 call s:HL('MatchParen', 'notquitered', 'darkgravel', 'bold')
 
@@ -125,6 +125,13 @@ call s:HL('SpecialKey', 'deepgravel', 'bg')
 call s:HL('Visual',    '',  'deepgravel')
 call s:HL('VisualNOS', '',  'deepgravel')
 
+call s:HL('Search',    'black', 'notepad', 'bold')
+call s:HL('IncSearch', 'black', 'notepad', 'bold')
+
+call s:HL('Underlined', 'fg', '', 'underline')
+
+call s:HL('StatusLine',   'black', 'tardis',     'bold')
+call s:HL('StatusLineNC', 'white', 'deepgravel', 'bold')
 " }}}
 
 " }}}
@@ -136,12 +143,12 @@ hi Cursor  guifg=NONE guibg=#00ffff gui=NONE
 hi LineNr  guifg=#81818a guibg=#090a1b gui=NONE
 " hi VertSplit  guifg=#363745 guibg=#363745 gui=NONE
 " hi MatchParen  guifg=#ff3854 guibg=NONE gui=NONE
-hi StatusLine  guifg=#f8f8f8 guibg=#363745 gui=bold
-hi StatusLineNC  guifg=#f8f8f8 guibg=#363745 gui=NONE
+" hi StatusLine  guifg=#f8f8f8 guibg=#363745 gui=bold
+" hi StatusLineNC  guifg=#f8f8f8 guibg=#363745 gui=NONE
 hi Pmenu  guifg=#6fd3ff guibg=NONE gui=NONE
 hi PmenuSel  guifg=NONE guibg=#05448d gui=NONE
 hi IncSearch  guifg=NONE guibg=#233466 gui=NONE
-hi Search  guifg=NONE guibg=#233466 gui=NONE
+" hi Search  guifg=NONE guibg=#233466 gui=NONE
 hi Directory  guifg=#0a9cff guibg=NONE gui=NONE
 " hi Folded  guifg=#c050c2 guibg=#090a1b gui=NONE
 
@@ -172,7 +179,7 @@ hi Tag  guifg=#6fd3ff guibg=NONE gui=NONE
 hi Title  guifg=#f8f8f8 guibg=NONE gui=bold
 hi Todo  guifg=#c050c2 guibg=#000000 gui=inverse,bold,italic
 hi Type  guifg=#6fd3ff guibg=NONE gui=NONE
-hi Underlined  guifg=NONE guibg=NONE gui=underline
+" hi Underlined  guifg=NONE guibg=NONE gui=underline
 hi rubyClass  guifg=#ff3854 guibg=NONE gui=NONE
 hi rubyFunction  guifg=#6fd3ff guibg=NONE gui=NONE
 hi rubyInterpolationDelimiter  guifg=NONE guibg=NONE gui=NONE
