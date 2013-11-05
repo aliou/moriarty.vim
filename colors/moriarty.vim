@@ -8,8 +8,9 @@
 "   I've given you a glimpse, Sherlock. Just a tinsy glimspe of what I've got
 "   going on out there in the big bad world. I'm a specialist you see, like you.
 "
-"   Made of Code + Bad Wolf
+"   This is basically Made of Code + Bad Wolf + Base16.
 
+" Supporting code -------------------------------------------------------------
 " Preamble {{{
 
 if !has("gui_running") && &t_Co != 88 && &t_Co != 256
@@ -53,6 +54,9 @@ let s:mc.tardis  = ['0a9dff', 39]
 
 " Made of Code's not quite red.
 let s:mc.notquitered = ['ff3854', 196]
+
+" Base's 16 notepad-like yellow.
+let s:mc.notepad = ['f4bf75', 03]
 
 " }}}
 " Highlighting Function {{{
