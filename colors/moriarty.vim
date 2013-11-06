@@ -132,6 +132,11 @@ call s:HL('Underlined', 'fg', '', 'underline')
 
 call s:HL('StatusLine',   'black', 'tardis',     'bold')
 call s:HL('StatusLineNC', 'white', 'deepgravel', 'bold')
+
+call s:HL('Directory', 'tardis', '', 'bold')
+
+call s:HL('Title', 'plain')
+
 " }}}
 
 " }}}
@@ -149,7 +154,7 @@ hi Pmenu  guifg=#6fd3ff guibg=NONE gui=NONE
 hi PmenuSel  guifg=NONE guibg=#05448d gui=NONE
 hi IncSearch  guifg=NONE guibg=#233466 gui=NONE
 " hi Search  guifg=NONE guibg=#233466 gui=NONE
-hi Directory  guifg=#0a9cff guibg=NONE gui=NONE
+" hi Directory  guifg=#0a9cff guibg=NONE gui=NONE
 " hi Folded  guifg=#c050c2 guibg=#090a1b gui=NONE
 
 " hi Normal  guifg=#f8f8f8 guibg=#090a1b gui=NONE
@@ -176,7 +181,7 @@ hi Statement  guifg=#ff3854 guibg=NONE gui=NONE
 hi StorageClass  guifg=#99cf50 guibg=NONE gui=NONE
 hi String  guifg=#8fff58 guibg=#102522 gui=NONE
 hi Tag  guifg=#6fd3ff guibg=NONE gui=NONE
-hi Title  guifg=#f8f8f8 guibg=NONE gui=bold
+" hi Title  guifg=#f8f8f8 guibg=NONE gui=bold
 hi Todo  guifg=#c050c2 guibg=#000000 gui=inverse,bold,italic
 hi Type  guifg=#6fd3ff guibg=NONE gui=NONE
 " hi Underlined  guifg=NONE guibg=NONE gui=underline
