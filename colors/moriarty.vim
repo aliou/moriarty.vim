@@ -55,7 +55,7 @@ let s:mc.tardis  = ['0a9dff', 39]
 " Made of Code's not quite red.
 let s:mc.notquitered = ['ff3854', 196]
 
-" Base's 16 notepad-like yellow.
+" Base 16's notepad-like yellow.
 let s:mc.notepad = ['f4bf75', 03]
 
 " }}}
@@ -136,6 +136,8 @@ call s:HL('StatusLineNC', 'white', 'deepgravel', 'bold')
 call s:HL('Directory', 'tardis', '', 'bold')
 
 call s:HL('Title', 'plain')
+
+call s:HL('Tag', '', '', 'bold')
 
 " }}}
 
