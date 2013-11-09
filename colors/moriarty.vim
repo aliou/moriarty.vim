@@ -58,6 +58,15 @@ let s:mc.notquitered = ['ff3854', 196]
 " Base 16's notepad-like yellow.
 let s:mc.notepad = ['f4bf75', 03]
 
+" A beautiful tan from Tomorrow Night.
+let s:mc.dirtyblonde = ['f4cf86', 222]
+
+" Base 16's 15th color.
+let s:mc.base0E = ['aa759f', 05]
+
+" This one's from Mustang, not Florida!
+let s:mc.orange = ['b95e30', 214]
+
 " }}}
 " Highlighting Function {{{
 function! s:HL(group, fg, ...)
@@ -109,13 +118,14 @@ call s:HL('Folded', 'mediumgravel', 'bg', 'none')
 
 call s:HL('VertSplit', 'lightgravel', 'bg', 'none')
 
-call s:HL('CursorLine',   '', 'darkgravel', 'none')
-call s:HL('CursorColumn', '', 'darkgravel')
-call s:HL('ColorColumn',  '', 'darkgravel')
+call s:HL('CursorLine',   '',       'darkgravel', 'none')
+call s:HL('CursorLineNr', 'tardis', 'darkgravel', 'none')
+call s:HL('CursorColumn', '',       'darkgravel')
+call s:HL('ColorColumn',  '',        'darkgravel')
 
 call s:HL('TabLine',     'plain', 'blackestgravel', 'none')
 call s:HL('TabLineFill', 'plain', 'blackestgravel', 'none')
-call s:HL('TabLineSel',  'black', 'tardis', 'none')
+call s:HL('TabLineSel',  'black', 'tardis',         'none')
 
 call s:HL('MatchParen', 'notquitered', 'darkgravel', 'bold')
 
@@ -137,7 +147,27 @@ call s:HL('Directory', 'tardis', '', 'bold')
 
 call s:HL('Title', 'plain')
 
+call s:HL('ErrorMsg',   'notquitered', 'bg', 'bold')
+call s:HL('MoreMsg',    'notepad',      '',  'bold')
+call s:HL('ModeMsg',    'dirtyblonde',  '',  'bold')
+call s:HL('Question',   'dirtyblonde',  '',  'bold')
+call s:HL('WarningMsg', 'base0E',       '',  'bold')
+
 call s:HL('Tag', '', '', 'bold')
+
+" }}}
+" Gutter {{{
+
+call s:HL('LineNr',     'mediumgravel', 'blackgravel')
+call s:HL('SignColumn', '',             'blackgravel')
+call s:HL('FoldColumn', 'mediumgravel', 'blackgravel')
+
+" }}}
+" Cursor {{{
+
+call s:HL('Cursor',  'black', 'tardis', 'bold')
+call s:HL('vCursor', 'black', 'tardis', 'bold')
+call s:HL('iCursor', 'black', 'tardis', 'none')
 
 " }}}
 
