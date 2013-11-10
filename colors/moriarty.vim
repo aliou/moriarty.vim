@@ -67,6 +67,12 @@ let s:mc.base0E = ['aa759f', 05]
 " This one's from Mustang, not Florida!
 let s:mc.orange = ['b95e30', 214]
 
+" A limier green from Getafe.
+let s:mc.lime = ['aeee00', 154]
+
+" Rose's dress in The Idiot's Lantern.
+let s:mc.dress = ['ff9eb8', 211]
+
 " }}}
 " Highlighting Function {{{
 function! s:HL(group, fg, ...)
@@ -168,6 +174,52 @@ call s:HL('FoldColumn', 'mediumgravel', 'blackgravel')
 call s:HL('Cursor',  'black', 'tardis', 'bold')
 call s:HL('vCursor', 'black', 'tardis', 'bold')
 call s:HL('iCursor', 'black', 'tardis', 'none')
+
+" }}}
+" Syntax highlighting {{{
+
+call s:HL('Special', 'plain')
+
+call s:HL('Comment',        'gravel')
+call s:HL('Todo',           'white', 'bg', 'bold')
+call s:HL('SpecialComment', 'white', 'bg', 'bold')
+
+call s:HL('String', 'orange')
+
+call s:HL('Statement',   'base0E', '', 'bold')
+call s:HL('Keyword',     'base0E', '', 'bold')
+call s:HL('Conditional', 'base0E', '', 'bold')
+call s:HL('Operator',    'base0E', '', 'none')
+call s:HL('Label',       'base0E', '', 'none')
+call s:HL('Repeat',      'base0E', '', 'none')
+
+call s:HL('Identifier', 'orange', '', 'none')
+call s:HL('Function',   'orange', '', 'none')
+
+call s:HL('PreProc',   'notquitered', '', 'none')
+call s:HL('Macro',     'notquitered', '', 'none')
+call s:HL('Define',    'notquitered', '', 'none')
+call s:HL('PreCondit', 'notquitered', '', 'bold')
+
+call s:HL('Constant',  'lime', '', 'bold')
+call s:HL('Character', 'lime', '', 'bold')
+call s:HL('Boolean',   'lime', '', 'bold')
+
+call s:HL('Number', 'tardis', '', 'bold')
+call s:HL('Float',  'tardis', '', 'bold')
+
+call s:HL('SpecialChar', 'dress', '', 'bold')
+
+call s:HL('Type', 'dress', '', 'none')
+call s:HL('StorageClass', 'notquitered', '', 'none')
+call s:HL('Structure', 'notquitered', '', 'none')
+call s:HL('Typedef', 'notquitered', '', 'bold')
+
+call s:HL('Exception', 'lime', '', 'bold')
+
+call s:HL('Error',  'white',   'notquitered', 'bold')
+call s:HL('Debug',  'white',   '',      'bold')
+call s:HL('Ignore', 'gravel', '',      '')
 
 " }}}
 
