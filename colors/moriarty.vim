@@ -1,14 +1,14 @@
-"     __  __            _            _
-"    |  \/  | ___  _ __(_) __ _ _ __| |_ _   _
-"    | |\/| |/ _ \| '__| |/ _` | '__| __| | | |
-"    | |  | | (_) | |  | | (_| | |  | |_| |_| |
-"    |_|  |_|\___/|_|  |_|\__,_|_|   \__|\__, |
-"                                        |___/
+"          "       __  __            _            _               "
+"          "      |  \/  | ___  _ __(_) __ _ _ __| |_ _   _       "
+"          "      | |\/| |/ _ \| '__| |/ _` | '__| __| | | |      "
+"          "      | |  | | (_) | |  | | (_| | |  | |_| |_| |      "
+"          "      |_|  |_|\___/|_|  |_|\__,_|_|   \__|\__, |      "
+"          "                                          |___/       "
 "
 "   I've given you a glimpse, Sherlock. Just a tinsy glimspe of what I've got
 "   going on out there in the big bad world. I'm a specialist you see, like you.
 "
-"   This is basically Made of Code + Bad Wolf + Base16.
+"   This is basically Made of Code + Bad Wolf + Base16 and some other stuff.
 
 " Supporting code -------------------------------------------------------------
 " Preamble {{{
@@ -220,6 +220,14 @@ call s:HL('Exception', 'lime', '', 'bold')
 call s:HL('Error',  'white',   'notquitered', 'bold')
 call s:HL('Debug',  'white',   '',      'bold')
 call s:HL('Ignore', 'gravel', '',      '')
+
+" }}}
+" Completion Menu {{{
+
+call s:HL('Pmenu', 'plain', 'deepergravel')
+call s:HL('PmenuSel', 'black', 'tardis', 'bold')
+call s:HL('PmenuSbar', '', 'deepergravel')
+call s:HL('PmenuThumb', 'brightgravel')
 
 " }}}
 
