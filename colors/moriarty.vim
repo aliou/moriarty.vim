@@ -67,7 +67,7 @@ let s:mc.base0E = ['aa759f', 05]
 " This one's from Mustang, not Florida!
 let s:mc.orange = ['d08770', 214]
 
-" A limier green from Getafe.
+" A limy green from Badwolf.
 let s:mc.lime = ['aeee00', 154]
 
 " Rose's dress in The Idiot's Lantern.
@@ -181,8 +181,8 @@ call s:HL('iCursor', 'black', 'tardis', 'none')
 call s:HL('Special', 'plain')
 
 call s:HL('Comment',        'gravel')
-call s:HL('Todo',           'white', 'bg', 'bold')
-call s:HL('SpecialComment', 'white', 'bg', 'bold')
+call s:HL('Todo',           'tardis', 'bg', 'bold')
+call s:HL('SpecialComment', 'tardis', 'bg', 'bold')
 
 call s:HL('String', 'orange')
 
