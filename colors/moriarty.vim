@@ -65,7 +65,7 @@ let s:mc.dirtyblonde = ['f4cf86', 222]
 let s:mc.base0E = ['aa759f', 05]
 
 " This one's from Mustang, not Florida!
-let s:mc.orange = ['b95e30', 214]
+let s:mc.orange = ['d08770', 214]
 
 " A limier green from Getafe.
 let s:mc.lime = ['aeee00', 154]
