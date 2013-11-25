@@ -64,7 +64,7 @@ let s:mc.dirtyblonde = ['f4cf86', 222]
 " Base 16's 15th color.
 let s:mc.base0E = ['aa759f', 05]
 
-" This one's from Mustang, not Florida!
+" An orange from Base 16.
 let s:mc.orange = ['d08770', 214]
 
 " A limy green from Badwolf.
@@ -72,6 +72,12 @@ let s:mc.lime = ['aeee00', 154]
 
 " Rose's dress in The Idiot's Lantern.
 let s:mc.dress = ['ff9eb8', 211]
+
+" The diff colors from jellybeans.
+let s:mc.leaf = ['437019', 0]
+let s:mc.fadedblue = ['8fbfdc', 0]
+let s:mc.plainblue = ['2b5b77', 0]
+let s:mc.hotred = ['700009', 0]
 
 " }}}
 " Highlighting Function {{{
@@ -228,6 +234,14 @@ call s:HL('Pmenu', 'plain', 'deepergravel')
 call s:HL('PmenuSel', 'black', 'tardis', 'bold')
 call s:HL('PmenuSbar', '', 'deepergravel')
 call s:HL('PmenuThumb', 'brightgravel')
+
+" }}}
+" Diffs {{{
+
+call s:HL('DiffAdd',    'plain',     'leaf')
+call s:HL('DiffDelete', 'black', 'hotred')
+call s:HL('DiffChange', '',     'plainblue')
+call s:HL('DiffText',   'black', 'fadedblue', 'bold')
 
 " }}}
 
