@@ -244,5 +244,15 @@ call s:HL('DiffChange', '',     'plainblue')
 call s:HL('DiffText',   'black', 'fadedblue', 'bold')
 
 " }}}
+" Spelling {{{
+
+if has("spell")
+    call s:HL('SpellCap', 'notepad', 'bg', 'undercurl,bold', 'notepad')
+    call s:HL('SpellBad', '', 'bg', 'undercurl', 'notepad')
+    call s:HL('SpellLocal', '', '', 'undercurl', 'notepad')
+    call s:HL('SpellRare', '', '', 'undercurl', 'notepad')
+endif
+
+" }}}
 
 " }}}
