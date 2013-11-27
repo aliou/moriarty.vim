@@ -256,3 +256,37 @@ endif
 " }}}
 
 " }}}
+" Plugins {{{
+
+" CtrlP {{{
+
+    " the message when no match is found
+    call s:HL('CtrlPNoEntries', 'white', 'hotred', 'bold')
+
+    " the matched pattern
+    call s:HL('CtrlPMatch', 'orange', 'bg', 'none')
+
+    " the line prefix '>' in the match window
+    call s:HL('CtrlPLinePre', 'deepgravel', 'bg', 'none')
+
+    " the prompt’s base
+    call s:HL('CtrlPPrtBase', 'deepgravel', 'bg', 'none')
+
+    " the prompt’s text
+    call s:HL('CtrlPPrtText', 'plain', 'bg', 'none')
+
+    " the prompt’s cursor when moving over the text
+    call s:HL('CtrlPPrtCursor', 'black', 'tardis', 'bold')
+
+    " 'prt' or 'win', also for 'regex'
+    call s:HL('CtrlPMode1', 'black', 'tardis', 'bold')
+
+    " 'file' or 'path', also for the local working dir
+    call s:HL('CtrlPMode2', 'black', 'tardis', 'bold')
+
+    " the scanning status
+    call s:HL('CtrlPStats', 'black', 'tardis', 'bold')
+
+" }}}
+
+" }}}
