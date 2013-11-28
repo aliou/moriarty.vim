@@ -123,7 +123,6 @@ endfunction
 " Vanilla Vim {{{
 
 " General/UI {{{
-
 call s:HL('Normal', 'plain', 'blackgravel')
 
 call s:HL('Folded', 'mediumgravel', 'bg', 'none')
@@ -286,6 +285,35 @@ endif
 
     " the scanning status
     call s:HL('CtrlPStats', 'black', 'tardis', 'bold')
+
+" }}}
+" }}}
+" Filetype-specific {{{
+
+" Markdown {{{
+
+call s:HL('markdownHeadingRule', 'lightgravel', '', 'bold')
+call s:HL('markdownHeadingDelimiter', 'lightgravel', '', 'bold')
+call s:HL('markdownOrderedListMarker', 'lightgravel', '', 'bold')
+call s:HL('markdownListMarker', 'lightgravel', '', 'bold')
+call s:HL('markdownItalic', 'white', '', 'bold')
+call s:HL('markdownBold', 'white', '', 'bold')
+call s:HL('markdownH1', 'orange', '', 'bold')
+call s:HL('markdownH2', 'lime', '', 'bold')
+call s:HL('markdownH3', 'lime', '', 'none')
+call s:HL('markdownH4', 'lime', '', 'none')
+call s:HL('markdownH5', 'lime', '', 'none')
+call s:HL('markdownH6', 'lime', '', 'none')
+call s:HL('markdownLinkText', 'notepad', '', 'underline')
+call s:HL('markdownIdDeclaration', 'notepad')
+call s:HL('markdownAutomaticLink', 'notepad', '', 'bold')
+call s:HL('markdownUrl', 'notepad', '', 'bold')
+call s:HL('markdownUrldelimiter', 'lightgravel', '', 'bold')
+call s:HL('markdownLinkDelimiter', 'lightgravel', '', 'bold')
+call s:HL('markdownLinkTextDelimiter', 'lightgravel', '', 'bold')
+call s:HL('markdownCodeDelimiter', 'dirtyblonde', '', 'bold')
+call s:HL('markdownCode', 'dirtyblonde', '', 'none')
+call s:HL('markdownCodeBlock', 'dirtyblonde', '', 'none')
 
 " }}}
 
