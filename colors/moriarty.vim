@@ -73,6 +73,9 @@ let s:mc.lime = ['aeee00', 154]
 " Rose's dress in The Idiot's Lantern.
 let s:mc.dress = ['ff9eb8', 211]
 
+" Jellybean's green.
+let s:mc.jellygreen = ['99ad6a', 0]
+
 " The diff colors from jellybeans.
 let s:mc.leaf = ['437019', 0]
 let s:mc.fadedblue = ['8fbfdc', 0]
@@ -189,7 +192,7 @@ call s:HL('Comment',        'gravel')
 call s:HL('Todo',           'tardis', 'bg', 'bold')
 call s:HL('SpecialComment', 'tardis', 'bg', 'bold')
 
-call s:HL('String', 'orange')
+call s:HL('String', 'jellygreen')
 
 call s:HL('Statement',   'base0E', '', 'bold')
 call s:HL('Keyword',     'base0E', '', 'bold')
@@ -287,6 +290,10 @@ endif
     call s:HL('CtrlPStats', 'black', 'tardis', 'bold')
 
 " }}}
+" Airline {{{
+
+" }}}
+
 " }}}
 " Filetype-specific {{{
 
