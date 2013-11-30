@@ -14,7 +14,7 @@
 " Preamble {{{
 
 if !has("gui_running") && &t_Co != 88 && &t_Co != 256
-    finish
+  finish
 endif
 
 set background=dark
@@ -82,43 +82,47 @@ let s:mc.fadedblue = ['8fbfdc', 0]
 let s:mc.plainblue = ['2b5b77', 0]
 let s:mc.hotred = ['700009', 0]
 
+" Also based on that Clouds Midnight brown.
+let s:mc.coffee    = ['c7915b', 173]
+let s:mc.darkroast = ['88633f', 95]
+
 " }}}
 " Highlighting Function {{{
 function! s:HL(group, fg, ...)
-    " Arguments: group, guifg, guibg, gui, guisp
+  " Arguments: group, guifg, guibg, gui, guisp
 
-    let histring = 'hi ' . a:group . ' '
+  let histring = 'hi ' . a:group . ' '
 
-    if strlen(a:fg)
-        if a:fg == 'fg'
-            let histring .= 'guifg=fg ctermfg=fg '
-        else
-            let c = get(s:mc, a:fg)
-            let histring .= 'guifg=#' . c[0] . ' ctermfg=' . c[1] . ' '
-        endif
+  if strlen(a:fg)
+    if a:fg == 'fg'
+      let histring .= 'guifg=fg ctermfg=fg '
+    else
+      let c = get(s:mc, a:fg)
+      let histring .= 'guifg=#' . c[0] . ' ctermfg=' . c[1] . ' '
     endif
+  endif
 
-    if a:0 >= 1 && strlen(a:1)
-        if a:1 == 'bg'
-            let histring .= 'guibg=bg ctermbg=bg '
-        else
-            let c = get(s:mc, a:1)
-            let histring .= 'guibg=#' . c[0] . ' ctermbg=' . c[1] . ' '
-        endif
+  if a:0 >= 1 && strlen(a:1)
+    if a:1 == 'bg'
+      let histring .= 'guibg=bg ctermbg=bg '
+    else
+      let c = get(s:mc, a:1)
+      let histring .= 'guibg=#' . c[0] . ' ctermbg=' . c[1] . ' '
     endif
+  endif
 
-    if a:0 >= 2 && strlen(a:2)
-        let histring .= 'gui=' . a:2 . ' cterm=' . a:2 . ' '
-    endif
+  if a:0 >= 2 && strlen(a:2)
+    let histring .= 'gui=' . a:2 . ' cterm=' . a:2 . ' '
+  endif
 
-    if a:0 >= 3 && strlen(a:3)
-        let c = get(s:mc, a:3)
-        let histring .= 'guisp=#' . c[0] . ' '
-    endif
+  if a:0 >= 3 && strlen(a:3)
+    let c = get(s:mc, a:3)
+    let histring .= 'guisp=#' . c[0] . ' '
+  endif
 
-    " echom histring
+  " echom histring
 
-    execute histring
+  execute histring
 endfunction
 " }}}
 
@@ -249,10 +253,10 @@ call s:HL('DiffText',   'black', 'fadedblue', 'bold')
 " Spelling {{{
 
 if has("spell")
-    call s:HL('SpellCap', 'notepad', 'bg', 'undercurl,bold', 'notepad')
-    call s:HL('SpellBad', '', 'bg', 'undercurl', 'notepad')
-    call s:HL('SpellLocal', '', '', 'undercurl', 'notepad')
-    call s:HL('SpellRare', '', '', 'undercurl', 'notepad')
+  call s:HL('SpellCap', 'notepad', 'bg', 'undercurl,bold', 'notepad')
+  call s:HL('SpellBad', '', 'bg', 'undercurl', 'notepad')
+  call s:HL('SpellLocal', '', '', 'undercurl', 'notepad')
+  call s:HL('SpellRare', '', '', 'undercurl', 'notepad')
 endif
 
 " }}}
@@ -262,32 +266,32 @@ endif
 
 " CtrlP {{{
 
-    " the message when no match is found
-    call s:HL('CtrlPNoEntries', 'white', 'hotred', 'bold')
+" the message when no match is found
+call s:HL('CtrlPNoEntries', 'white', 'hotred', 'bold')
 
-    " the matched pattern
-    call s:HL('CtrlPMatch', 'orange', 'bg', 'none')
+" the matched pattern
+call s:HL('CtrlPMatch', 'orange', 'bg', 'none')
 
-    " the line prefix '>' in the match window
-    call s:HL('CtrlPLinePre', 'deepgravel', 'bg', 'none')
+" the line prefix '>' in the match window
+call s:HL('CtrlPLinePre', 'deepgravel', 'bg', 'none')
 
-    " the prompt’s base
-    call s:HL('CtrlPPrtBase', 'deepgravel', 'bg', 'none')
+" the prompt’s base
+call s:HL('CtrlPPrtBase', 'deepgravel', 'bg', 'none')
 
-    " the prompt’s text
-    call s:HL('CtrlPPrtText', 'plain', 'bg', 'none')
+" the prompt’s text
+call s:HL('CtrlPPrtText', 'plain', 'bg', 'none')
 
-    " the prompt’s cursor when moving over the text
-    call s:HL('CtrlPPrtCursor', 'black', 'tardis', 'bold')
+" the prompt’s cursor when moving over the text
+call s:HL('CtrlPPrtCursor', 'black', 'tardis', 'bold')
 
-    " 'prt' or 'win', also for 'regex'
-    call s:HL('CtrlPMode1', 'black', 'tardis', 'bold')
+" 'prt' or 'win', also for 'regex'
+call s:HL('CtrlPMode1', 'black', 'tardis', 'bold')
 
-    " 'file' or 'path', also for the local working dir
-    call s:HL('CtrlPMode2', 'black', 'tardis', 'bold')
+" 'file' or 'path', also for the local working dir
+call s:HL('CtrlPMode2', 'black', 'tardis', 'bold')
 
-    " the scanning status
-    call s:HL('CtrlPStats', 'black', 'tardis', 'bold')
+" the scanning status
+call s:HL('CtrlPStats', 'black', 'tardis', 'bold')
 
 " }}}
 " Airline {{{
@@ -321,6 +325,16 @@ call s:HL('markdownLinkTextDelimiter', 'lightgravel', '', 'bold')
 call s:HL('markdownCodeDelimiter', 'dirtyblonde', '', 'bold')
 call s:HL('markdownCode', 'dirtyblonde', '', 'none')
 call s:HL('markdownCodeBlock', 'dirtyblonde', '', 'none')
+
+" }}}
+" Vim {{{
+
+call s:HL('VimCommentTitle', 'lightgravel', '', 'bold')
+
+call s:HL('VimMapMod',    'dress', '', 'none')
+call s:HL('VimMapModKey', 'dress', '', 'none')
+call s:HL('VimNotation', 'dress', '', 'none')
+call s:HL('VimBracket', 'dress', '', 'none')
 
 " }}}
 
