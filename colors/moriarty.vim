@@ -327,6 +327,24 @@ call s:HL('markdownCode', 'dirtyblonde', '', 'none')
 call s:HL('markdownCodeBlock', 'dirtyblonde', '', 'none')
 
 " }}}
+" HTML {{{
+
+" Punctuation
+call s:HL('htmlTag',    'darkroast', 'bg', 'none')
+call s:HL('htmlEndTag', 'darkroast', 'bg', 'none')
+
+" Tag names
+call s:HL('htmlTagName',        'coffee', '', 'bold')
+call s:HL('htmlSpecialTagName', 'coffee', '', 'bold')
+call s:HL('htmlSpecialChar',    'lime',   '', 'none')
+
+" Attributes
+call s:HL('htmlArg', 'coffee', '', 'none')
+
+" Stuff inside an <a> tag
+call s:HL('htmlLink', 'lightgravel', '', 'underline')
+
+" }}}
 " Vim {{{
 
 call s:HL('VimCommentTitle', 'lightgravel', '', 'bold')
