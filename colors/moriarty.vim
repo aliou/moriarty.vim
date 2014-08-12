@@ -139,7 +139,7 @@ call s:HL('VertSplit', 'lightgravel', 'bg', 'none')
 call s:HL('CursorLine',   '',       'darkgravel', 'none')
 call s:HL('CursorLineNr', 'tardis', 'darkgravel', 'none')
 call s:HL('CursorColumn', '',       'darkgravel')
-call s:HL('ColorColumn',  '',        'darkgravel')
+call s:HL('ColorColumn',  '',       'darkgravel')
 
 call s:HL('TabLine',     'plain', 'blackestgravel', 'none')
 call s:HL('TabLineFill', 'plain', 'blackestgravel', 'none')
@@ -292,9 +292,6 @@ call s:HL('CtrlPMode2', 'black', 'tardis', 'bold')
 
 " the scanning status
 call s:HL('CtrlPStats', 'black', 'tardis', 'bold')
-
-" }}}
-" Airline {{{
 
 " }}}
 
