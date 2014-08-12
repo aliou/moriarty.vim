@@ -74,7 +74,7 @@ let s:mc.lime = ['aeee00', 154]
 let s:mc.dress = ['ff9eb8', 211]
 
 " Jellybean's green.
-let s:mc.jellygreen = ['99ad6a', 0]
+let s:mc.jellygreen = ['99ad6a', 154]
 
 " The diff colors from jellybeans.
 let s:mc.leaf = ['437019', 0]
