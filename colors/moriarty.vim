@@ -74,7 +74,7 @@ let s:mc.lime = ['aeee00', 154]
 let s:mc.dress = ['ff9eb8', 211]
 
 " Jellybean's green.
-let s:mc.jellygreen = ['99ad6a', 154]
+let s:mc.jellygreen = ['99ad6a', 150]
 
 " The diff colors from jellybeans.
 let s:mc.leaf = ['437019', 0]
@@ -222,23 +222,23 @@ call s:HL('Float',  'tardis', '', 'bold')
 
 call s:HL('SpecialChar', 'dress', '', 'bold')
 
-call s:HL('Type', 'dress', '', 'none')
+call s:HL('Type',         'dress',       '', 'none')
 call s:HL('StorageClass', 'notquitered', '', 'none')
-call s:HL('Structure', 'notquitered', '', 'none')
-call s:HL('Typedef', 'notquitered', '', 'bold')
+call s:HL('Structure',    'notquitered', '', 'none')
+call s:HL('Typedef',      'notquitered', '', 'bold')
 
 call s:HL('Exception', 'lime', '', 'bold')
 
 call s:HL('Error',  'white',   'notquitered', 'bold')
-call s:HL('Debug',  'white',   '',      'bold')
-call s:HL('Ignore', 'gravel', '',      '')
+call s:HL('Debug',  'white',   '',            'bold')
+call s:HL('Ignore', 'gravel',  '',            '')
 
 " }}}
 " Completion Menu {{{
 
-call s:HL('Pmenu', 'plain', 'deepergravel')
-call s:HL('PmenuSel', 'black', 'tardis', 'bold')
-call s:HL('PmenuSbar', '', 'deepergravel')
+call s:HL('Pmenu',      'plain', 'deepergravel')
+call s:HL('PmenuSel',   'black', 'tardis', 'bold')
+call s:HL('PmenuSbar',  '',      'deepergravel')
 call s:HL('PmenuThumb', 'brightgravel')
 
 " }}}
