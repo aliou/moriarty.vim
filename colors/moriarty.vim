@@ -153,8 +153,8 @@ call s:HL('SpecialKey', 'deepgravel', 'bg')
 call s:HL('Visual',    '',  'deepgravel')
 call s:HL('VisualNOS', '',  'deepgravel')
 
-call s:HL('Search',    'black', 'notepad', 'bold')
-call s:HL('IncSearch', 'black', 'notepad', 'bold')
+call s:HL('Search',    'black', 'dirtyblonde', 'bold')
+call s:HL('IncSearch', 'black', 'dirtyblonde', 'bold')
 
 call s:HL('Underlined', 'fg', '', 'underline')
 
@@ -190,7 +190,7 @@ call s:HL('iCursor', 'black', 'tardis', 'none')
 " }}}
 " Syntax highlighting {{{
 
-call s:HL('Special', 'plain')
+call s:HL('Special', 'jellygreen')
 
 call s:HL('Comment',        'gravel')
 call s:HL('Todo',           'tardis', 'bg', 'bold')
