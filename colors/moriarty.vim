@@ -77,10 +77,10 @@ let s:mc.dress = ['ff9eb8', 211]
 let s:mc.jellygreen = ['99ad6a', 150]
 
 " The diff colors from jellybeans.
-let s:mc.leaf = ['437019', 0]
+let s:mc.leaf      = ['437019', 0]
 let s:mc.fadedblue = ['8fbfdc', 0]
 let s:mc.plainblue = ['2b5b77', 0]
-let s:mc.hotred = ['700009', 0]
+let s:mc.hotred    = ['700009', 0]
 
 " Also based on that Clouds Midnight brown.
 let s:mc.coffee    = ['c7915b', 173]
@@ -205,8 +205,8 @@ call s:HL('Operator',    'base0E', '', 'none')
 call s:HL('Label',       'base0E', '', 'none')
 call s:HL('Repeat',      'base0E', '', 'none')
 
-call s:HL('Identifier', 'orange', '', 'none')
-call s:HL('Function',   'orange', '', 'none')
+call s:HL('Identifier', 'dirtyblonde', '', 'none')
+call s:HL('Function',   'dirtyblonde', '', 'none')
 
 call s:HL('PreProc',   'notquitered', '', 'none')
 call s:HL('Macro',     'notquitered', '', 'none')
