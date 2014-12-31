@@ -31,11 +31,11 @@ let g:colors_name = "moriarty"
 let s:mc = {}
 
 " Our basic color.
-let s:mc.plain = ['f8f8f8', 15]
+let s:mc.plain          = ['f8f8f8', 15]
 
 " MJ at two different points in his life.
-let s:mc.white = ['ffffff', 15]
-let s:mc.black = ['000000', 16]
+let s:mc.white          = ['ffffff', 15]
+let s:mc.black          = ['000000', 16]
 
 " The gravel colors from Bad Wolf.
 let s:mc.brightgravel   = ['d9cec3', 252]
@@ -48,43 +48,39 @@ let s:mc.darkgravel     = ['242321', 235]
 let s:mc.blackgravel    = ['1c1b1a', 233]
 let s:mc.blackestgravel = ['141413', 232]
 
-" The blues from Made of Code and Badwolf.
-let s:mc.bluebox = ['233466', 39]
-let s:mc.tardis  = ['0a9dff', 39]
+" The blue from Badwolf.
+let s:mc.tardis         = ['0a9dff', 39]
 
 " Made of Code's not quite red.
-let s:mc.notquitered = ['ff3854', 196]
-
-" Base 16's notepad-like yellow.
-let s:mc.notepad = ['f4bf75', 03]
+let s:mc.notquitered    = ['ff3854', 160]
 
 " A beautiful tan from Tomorrow Night.
-let s:mc.dirtyblonde = ['f4cf86', 222]
+let s:mc.dirtyblonde    = ['f4cf86', 222]
 
 " Base 16's 15th color.
-let s:mc.base0E = ['aa759f', 05]
+let s:mc.base0E         = ['aa759f', 05]
 
 " An orange from Base 16.
-let s:mc.orange = ['d08770', 214]
+let s:mc.orange         = ['d08770', 209]
 
 " A limy green from Badwolf.
-let s:mc.lime = ['aeee00', 154]
+let s:mc.lime           = ['aeee00', 154]
 
 " Rose's dress in The Idiot's Lantern.
-let s:mc.dress = ['ff9eb8', 211]
+let s:mc.dress          = ['ff9eb8', 211]
 
 " Jellybean's green.
-let s:mc.jellygreen = ['99ad6a', 150]
+let s:mc.jellygreen     = ['99ad6a', 150]
 
 " The diff colors from jellybeans.
-let s:mc.leaf      = ['437019', 0]
-let s:mc.fadedblue = ['8fbfdc', 0]
-let s:mc.plainblue = ['2b5b77', 0]
-let s:mc.hotred    = ['700009', 0]
+let s:mc.leaf           = ['437019', 77]
+let s:mc.fadedblue      = ['8fbfdc', 111]
+let s:mc.plainblue      = ['2b5b77', 69]
+let s:mc.hotred         = ['700009', 196]
 
 " Also based on that Clouds Midnight brown.
-let s:mc.coffee    = ['c7915b', 173]
-let s:mc.darkroast = ['88633f', 95]
+let s:mc.coffee         = ['c7915b', 173]
+let s:mc.darkroast      = ['88633f', 95]
 
 " }}}
 " Highlighting Function {{{
@@ -166,7 +162,7 @@ call s:HL('Directory', 'tardis', '', 'bold')
 call s:HL('Title', 'plain')
 
 call s:HL('ErrorMsg',   'notquitered', 'bg', 'bold')
-call s:HL('MoreMsg',    'notepad',      '',  'bold')
+call s:HL('MoreMsg',    'dirtyblonde',      '',  'bold')
 call s:HL('ModeMsg',    'dirtyblonde',  '',  'bold')
 call s:HL('Question',   'dirtyblonde',  '',  'bold')
 call s:HL('WarningMsg', 'base0E',       '',  'bold')
@@ -253,10 +249,10 @@ call s:HL('DiffText',   'black', 'fadedblue', 'bold')
 " Spelling {{{
 
 if has("spell")
-  call s:HL('SpellCap', 'notepad', 'bg', 'undercurl,bold', 'notepad')
-  call s:HL('SpellBad', '', 'bg', 'undercurl', 'notepad')
-  call s:HL('SpellLocal', '', '', 'undercurl', 'notepad')
-  call s:HL('SpellRare', '', '', 'undercurl', 'notepad')
+  call s:HL('SpellCap', 'dirtyblonde', 'bg', 'undercurl,bold', 'dirtyblonde')
+  call s:HL('SpellBad', '', 'bg', 'undercurl', 'dirtyblonde')
+  call s:HL('SpellLocal', '', '', 'undercurl', 'dirtyblonde')
+  call s:HL('SpellRare', '', '', 'undercurl', 'dirtyblonde')
 endif
 
 " }}}
@@ -312,10 +308,10 @@ call s:HL('markdownH3', 'lime', '', 'none')
 call s:HL('markdownH4', 'lime', '', 'none')
 call s:HL('markdownH5', 'lime', '', 'none')
 call s:HL('markdownH6', 'lime', '', 'none')
-call s:HL('markdownLinkText', 'notepad', '', 'underline')
-call s:HL('markdownIdDeclaration', 'notepad')
-call s:HL('markdownAutomaticLink', 'notepad', '', 'bold')
-call s:HL('markdownUrl', 'notepad', '', 'bold')
+call s:HL('markdownLinkText', 'dirtyblonde', '', 'underline')
+call s:HL('markdownIdDeclaration', 'dirtyblonde')
+call s:HL('markdownAutomaticLink', 'dirtyblonde', '', 'bold')
+call s:HL('markdownUrl', 'dirtyblonde', '', 'bold')
 call s:HL('markdownUrldelimiter', 'lightgravel', '', 'bold')
 call s:HL('markdownLinkDelimiter', 'lightgravel', '', 'bold')
 call s:HL('markdownLinkTextDelimiter', 'lightgravel', '', 'bold')
