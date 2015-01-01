@@ -240,19 +240,19 @@ call s:HL('PmenuThumb', 'brightgravel')
 " }}}
 " Diffs {{{
 
-call s:HL('DiffAdd',    'plain',     'leaf')
+call s:HL('DiffAdd',    'plain', 'leaf')
 call s:HL('DiffDelete', 'black', 'hotred')
-call s:HL('DiffChange', '',     'plainblue')
+call s:HL('DiffChange', '',      'plainblue')
 call s:HL('DiffText',   'black', 'fadedblue', 'bold')
 
 " }}}
 " Spelling {{{
 
 if has("spell")
-  call s:HL('SpellCap', 'dirtyblonde', 'bg', 'undercurl,bold', 'dirtyblonde')
-  call s:HL('SpellBad', '', 'bg', 'undercurl', 'dirtyblonde')
-  call s:HL('SpellLocal', '', '', 'undercurl', 'dirtyblonde')
-  call s:HL('SpellRare', '', '', 'undercurl', 'dirtyblonde')
+  call s:HL('SpellCap',   'dirtyblonde', 'bg', 'undercurl,bold', 'dirtyblonde')
+  call s:HL('SpellBad',   '',            'bg', 'undercurl',      'dirtyblonde')
+  call s:HL('SpellLocal', '',            '',   'undercurl',      'dirtyblonde')
+  call s:HL('SpellRare',  '',            '',   'undercurl',      'dirtyblonde')
 endif
 
 " }}}
@@ -296,28 +296,28 @@ call s:HL('CtrlPStats', 'black', 'tardis', 'bold')
 
 " Markdown {{{
 
-call s:HL('markdownHeadingRule', 'lightgravel', '', 'bold')
-call s:HL('markdownHeadingDelimiter', 'lightgravel', '', 'bold')
+call s:HL('markdownHeadingRule',       'lightgravel', '', 'bold')
+call s:HL('markdownHeadingDelimiter',  'lightgravel', '', 'bold')
 call s:HL('markdownOrderedListMarker', 'lightgravel', '', 'bold')
-call s:HL('markdownListMarker', 'lightgravel', '', 'bold')
-call s:HL('markdownItalic', 'white', '', 'bold')
-call s:HL('markdownBold', 'white', '', 'bold')
-call s:HL('markdownH1', 'orange', '', 'bold')
-call s:HL('markdownH2', 'lime', '', 'bold')
-call s:HL('markdownH3', 'lime', '', 'none')
-call s:HL('markdownH4', 'lime', '', 'none')
-call s:HL('markdownH5', 'lime', '', 'none')
-call s:HL('markdownH6', 'lime', '', 'none')
-call s:HL('markdownLinkText', 'dirtyblonde', '', 'underline')
-call s:HL('markdownIdDeclaration', 'dirtyblonde')
-call s:HL('markdownAutomaticLink', 'dirtyblonde', '', 'bold')
-call s:HL('markdownUrl', 'dirtyblonde', '', 'bold')
-call s:HL('markdownUrldelimiter', 'lightgravel', '', 'bold')
-call s:HL('markdownLinkDelimiter', 'lightgravel', '', 'bold')
+call s:HL('markdownListMarker',        'lightgravel', '', 'bold')
+call s:HL('markdownItalic',            'white',       '', 'bold')
+call s:HL('markdownBold',              'white',       '', 'bold')
+call s:HL('markdownH1',                'orange',      '', 'bold')
+call s:HL('markdownH2',                'lime',        '', 'bold')
+call s:HL('markdownH3',                'lime',        '', 'none')
+call s:HL('markdownH4',                'lime',        '', 'none')
+call s:HL('markdownH5',                'lime',        '', 'none')
+call s:HL('markdownH6',                'lime',        '', 'none')
+call s:HL('markdownLinkText',          'dirtyblonde', '', 'underline')
+call s:HL('markdownIdDeclaration',     'dirtyblonde')
+call s:HL('markdownAutomaticLink',     'dirtyblonde', '', 'bold')
+call s:HL('markdownUrl',               'dirtyblonde', '', 'bold')
+call s:HL('markdownUrldelimiter',      'lightgravel', '', 'bold')
+call s:HL('markdownLinkDelimiter',     'lightgravel', '', 'bold')
 call s:HL('markdownLinkTextDelimiter', 'lightgravel', '', 'bold')
-call s:HL('markdownCodeDelimiter', 'dirtyblonde', '', 'bold')
-call s:HL('markdownCode', 'dirtyblonde', '', 'none')
-call s:HL('markdownCodeBlock', 'dirtyblonde', '', 'none')
+call s:HL('markdownCodeDelimiter',     'dirtyblonde', '', 'bold')
+call s:HL('markdownCode',              'dirtyblonde', '', 'none')
+call s:HL('markdownCodeBlock',         'dirtyblonde', '', 'none')
 
 " }}}
 " HTML {{{
@@ -335,7 +335,7 @@ call s:HL('htmlSpecialChar',    'lime',   '', 'none')
 call s:HL('htmlArg', 'coffee', '', 'none')
 
 " Stuff inside an <a> tag
-call s:HL('htmlLink', 'lightgravel', '', 'underline')
+call s:HL('htmlLink', 'lightgravel', '', 'none')
 
 " }}}
 " Vim {{{
