@@ -266,10 +266,10 @@ endif
 call s:HL('CtrlPNoEntries', 'white', 'hotred', 'bold')
 
 " the matched pattern
-call s:HL('CtrlPMatch', 'orange', 'bg', 'none')
+call s:HL('CtrlPMatch', 'dirtyblonde', 'bg', 'none')
 
 " the line prefix '>' in the match window
-call s:HL('CtrlPLinePre', 'deepgravel', 'bg', 'none')
+call s:HL('CtrlPLinePre', 'mediumgravel', 'bg', 'none')
 
 " the prompt’s base
 call s:HL('CtrlPPrtBase', 'deepgravel', 'bg', 'none')
