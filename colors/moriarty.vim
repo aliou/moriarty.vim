@@ -52,7 +52,7 @@ let s:mc.blackestgravel = ['141413', 232]
 let s:mc.tardis         = ['0a9dff', 39]
 
 " Made of Code's not quite red.
-let s:mc.notquitered    = ['ff3854', 160]
+let s:mc.notquitered    = ['ff3854', 203]
 
 " A beautiful tan from Tomorrow Night.
 let s:mc.dirtyblonde    = ['f4cf86', 222]
