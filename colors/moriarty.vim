@@ -5,7 +5,7 @@
 "          "      |_|  |_|\___/|_|  |_|\__,_|_|   \__|\__, |      "
 "          "                                          |___/       "
 "          "                                                      "
-"          "                                               v0.0.0 "
+"          "                                               v0.1.0 "
 "
 "   I've given you a glimpse, Sherlock. Just a tinsy glimspe of what I've got
 "   going on out there in the big bad world. I'm a specialist you see, like you.
