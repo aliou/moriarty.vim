@@ -116,8 +116,6 @@ function! s:HL(group, fg, ...)
     let histring .= 'guisp=#' . c[0] . ' '
   endif
 
-  " echom histring
-
   execute histring
 endfunction
 " }}}
