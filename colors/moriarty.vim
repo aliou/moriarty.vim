@@ -75,10 +75,12 @@ let s:mc.dress          = ['ff9eb8', 211]
 let s:mc.jellygreen     = ['99ad6a', 150]
 
 " The diff colors from jellybeans.
-let s:mc.leaf           = ['437019', 77]
-let s:mc.fadedblue      = ['8fbfdc', 111]
-let s:mc.plainblue      = ['2b5b77', 69]
 let s:mc.hotred         = ['700009', 196]
+
+" Diff colors from hybrid.
+let s:mc.hybridgreen    = ['5F875F', 65]
+let s:mc.hybridblue     = ['5F5F87', 60]
+let s:mc.hybridred      = ['CC6666', 167]
 
 " Also based on that Clouds Midnight brown.
 let s:mc.coffee         = ['c7915b', 173]
@@ -242,10 +244,10 @@ call s:HL('PmenuThumb', 'brightgravel')
 " }}}
 " Diffs {{{
 
-call s:HL('DiffAdd',    'plain', 'leaf')
-call s:HL('DiffDelete', 'black', 'hotred')
-call s:HL('DiffChange', '',      'plainblue')
-call s:HL('DiffText',   'black', 'fadedblue', 'bold')
+call s:HL('DiffAdd',    'plain', 'hybridgreen')
+call s:HL('DiffDelete', 'black', 'hybridred')
+call s:HL('DiffChange', 'plain', 'hybridblue')
+call s:HL('DiffText',   'black', 'hybridblue', 'bold')
 
 " }}}
 " Spelling {{{
@@ -292,6 +294,14 @@ call s:HL('CtrlPMode2', 'black', 'tardis', 'bold')
 call s:HL('CtrlPStats', 'black', 'tardis', 'bold')
 
 " }}}
+
+" GitGutter {{{
+call s:HL('GitGutterAdd', 'hybridgreen')
+call s:HL('GitGutterDelete', 'hybridred')
+call s:HL('GitGutterChange', 'hybridblue')
+call s:HL('GitGutterChangeDelete', 'hybridblue')
+" }}}
+
 
 " }}}
 " Filetype-specific {{{
