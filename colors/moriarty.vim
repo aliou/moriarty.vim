@@ -15,18 +15,18 @@
 " Supporting code -------------------------------------------------------------
 " Preamble {{{
 
-if !has("gui_running") && &t_Co != 88 && &t_Co != 256
+if !has('gui_running') && &t_Co != 88 && &t_Co != 256
   finish
 endif
 
 set background=dark
 highlight clear
 
-if exists("syntax_on")
+if exists('syntax_on')
   syntax reset
 endif
 
-let g:colors_name = "moriarty"
+let g:colors_name = 'moriarty'
 
 " }}}
 " Palette {{{
@@ -89,36 +89,38 @@ let s:mc.darkroast      = ['88633f', 95]
 function! s:HL(group, fg, ...)
   " Arguments: group, guifg, guibg, gui, guisp
 
-  let histring = 'hi ' . a:group . ' '
+  let l:histring = 'hi ' . a:group . ' '
 
   if strlen(a:fg)
-    if a:fg == 'fg'
-      let histring .= 'guifg=fg ctermfg=fg '
+    if a:fg ==# 'fg'
+      let l:histring .= 'guifg=fg ctermfg=fg '
     else
-      let c = get(s:mc, a:fg)
-      let histring .= 'guifg=#' . c[0] . ' ctermfg=' . c[1] . ' '
+      let l:c = get(s:mc, a:fg)
+      let l:histring .= 'guifg=#' . l:c[0] . ' ctermfg=' . l:c[1] . ' '
     endif
   endif
 
   if a:0 >= 1 && strlen(a:1)
-    if a:1 == 'bg'
-      let histring .= 'guibg=bg ctermbg=bg '
+    if a:1 ==# 'bg'
+      let l:histring .= 'guibg=bg ctermbg=bg '
     else
-      let c = get(s:mc, a:1)
-      let histring .= 'guibg=#' . c[0] . ' ctermbg=' . c[1] . ' '
+      let l:c = get(s:mc, a:1)
+      let l:histring .= 'guibg=#' . l:c[0] . ' ctermbg=' . l:c[1] . ' '
     endif
   endif
 
   if a:0 >= 2 && strlen(a:2)
-    let histring .= 'gui=' . a:2 . ' cterm=' . a:2 . ' '
+    let l:histring .= 'gui=' . a:2 . ' cterm=' . a:2 . ' '
   endif
 
   if a:0 >= 3 && strlen(a:3)
-    let c = get(s:mc, a:3)
-    let histring .= 'guisp=#' . c[0] . ' '
+    let l:c = get(s:mc, a:3)
+    let l:histring .= 'guisp=#' . l:c[0] . ' '
   endif
 
-  execute histring
+  " echom l:histring
+
+  execute l:histring
 endfunction
 " }}}
 
