@@ -158,8 +158,8 @@ call s:HL('IncSearch', 'black', 'dirtyblonde', 'bold')
 
 call s:HL('Underlined', 'fg', '', 'underline')
 
-call s:HL('StatusLine',   'black', 'tardis',     'bold')
-call s:HL('StatusLineNC', 'white', 'deepgravel', 'bold')
+call s:HL('StatusLine',   'black', 'tardis',     'none')
+call s:HL('StatusLineNC', 'white', 'deepgravel', 'none')
 
 call s:HL('Directory', 'tardis', '', 'bold')
 
@@ -198,9 +198,9 @@ call s:HL('SpecialComment', 'tardis', 'bg', 'bold')
 
 call s:HL('String', 'jellygreen')
 
-call s:HL('Statement',   'base0E', '', 'bold')
-call s:HL('Keyword',     'base0E', '', 'bold')
-call s:HL('Conditional', 'base0E', '', 'bold')
+call s:HL('Statement',   'base0E', '', 'none')
+call s:HL('Keyword',     'base0E', '', 'none')
+call s:HL('Conditional', 'base0E', '', 'none')
 call s:HL('Operator',    'base0E', '', 'none')
 call s:HL('Label',       'base0E', '', 'none')
 call s:HL('Repeat',      'base0E', '', 'none')
@@ -213,24 +213,24 @@ call s:HL('Macro',     'notquitered', '', 'none')
 call s:HL('Define',    'notquitered', '', 'none')
 call s:HL('PreCondit', 'notquitered', '', 'bold')
 
-call s:HL('Constant',  'lime', '', 'bold')
-call s:HL('Character', 'lime', '', 'bold')
-call s:HL('Boolean',   'lime', '', 'bold')
+call s:HL('Constant',  'lime', '', 'none')
+call s:HL('Character', 'lime', '', 'none')
+call s:HL('Boolean',   'lime', '', 'none')
 
-call s:HL('Number', 'tardis', '', 'bold')
-call s:HL('Float',  'tardis', '', 'bold')
+call s:HL('Number', 'tardis', '', 'none')
+call s:HL('Float',  'tardis', '', 'none')
 
-call s:HL('SpecialChar', 'dress', '', 'bold')
+call s:HL('SpecialChar', 'dress', '', 'none')
 
 call s:HL('Type',         'dress',       '', 'none')
 call s:HL('StorageClass', 'notquitered', '', 'none')
 call s:HL('Structure',    'notquitered', '', 'none')
-call s:HL('Typedef',      'notquitered', '', 'bold')
+call s:HL('Typedef',      'notquitered', '', 'none')
 
-call s:HL('Exception', 'lime', '', 'bold')
+call s:HL('Exception', 'lime', '', 'none')
 
-call s:HL('Error',  'white',   'notquitered', 'bold')
-call s:HL('Debug',  'white',   '',            'bold')
+call s:HL('Error',  'white',   'notquitered', 'none')
+call s:HL('Debug',  'white',   '',            'none')
 call s:HL('Ignore', 'gravel',  '',            '')
 
 " }}}
