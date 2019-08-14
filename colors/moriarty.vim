@@ -350,3 +350,5 @@ call s:HL('VimBracket', 'dress', '', 'none')
 " }}}
 
 " }}}
+
+" vim:foldmethod=marker
